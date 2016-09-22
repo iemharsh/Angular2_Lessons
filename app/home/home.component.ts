@@ -3,9 +3,11 @@ import {Component} from "@angular/core";
     selector: 'home',
     template: `
     <div>I am the home component</div>
-    <widget-one></widget-one>
+    <widget-one *ngIf="selected"></widget-one>
     <widget-two></widget-two>
     `
 })
 
-export class HomeComponent { }
+export class HomeComponent {
+    private _selected = true;
+}

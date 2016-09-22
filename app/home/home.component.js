@@ -11,11 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var HomeComponent = (function () {
     function HomeComponent() {
+        this._selected = true;
     }
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'home',
-            template: "\n    <div>I am the home component</div>\n    <widget-one></widget-one>\n    <widget-two></widget-two>\n    "
+            template: "\n    <div>I am the home component</div>\n    <widget-one *ngIf=\"selected\"></widget-one>\n    <widget-two></widget-two>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);

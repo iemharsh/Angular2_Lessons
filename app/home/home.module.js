@@ -14,14 +14,15 @@ var widget_one_component_1 = require("../widgets/widget-one.component");
 var widget_two_component_1 = require("../widgets/widget-two.component");
 var widget_one_module_1 = require("../widgets/widget-one.module");
 var widget_two_module_1 = require("../widgets/widget-two.module");
+var common_1 = require("@angular/common");
 var HomeModule = (function () {
     function HomeModule() {
     }
     HomeModule = __decorate([
         core_1.NgModule({
-            imports: [widget_one_module_1.WidgetOneModule, widget_two_module_1.WidgetTwoModule],
+            imports: [widget_one_module_1.WidgetOneModule, widget_two_module_1.WidgetTwoModule, common_1.CommonModule],
             declarations: [home_component_1.HomeComponent],
-            exports: [home_component_1.HomeComponent, widget_one_component_1.WidgetOneComponent, widget_two_component_1.WidgetTwoComponent]
+            exports: [home_component_1.HomeComponent, widget_one_component_1.WidgetOneComponent, widget_two_component_1.WidgetTwoComponent, common_1.CommonModule]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeModule);
