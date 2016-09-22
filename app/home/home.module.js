@@ -10,13 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var home_component_1 = require("./home.component");
+var widget_one_component_1 = require("../widgets/widget-one.component");
+var widget_two_component_1 = require("../widgets/widget-two.component");
+var widget_one_module_1 = require("../widgets/widget-one.module");
+var widget_two_module_1 = require("../widgets/widget-two.module");
 var HomeModule = (function () {
     function HomeModule() {
     }
     HomeModule = __decorate([
         core_1.NgModule({
+            imports: [widget_one_module_1.WidgetOneModule, widget_two_module_1.WidgetTwoModule],
             declarations: [home_component_1.HomeComponent],
-            exports: [home_component_1.HomeComponent]
+            exports: [home_component_1.HomeComponent, widget_one_component_1.WidgetOneComponent, widget_two_component_1.WidgetTwoComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeModule);

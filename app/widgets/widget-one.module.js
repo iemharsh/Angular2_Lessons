@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var HomeComponent = (function () {
-    function HomeComponent() {
+var widget_one_component_1 = require("./widget-one.component");
+var WidgetOneModule = (function () {
+    function WidgetOneModule() {
     }
-    HomeComponent = __decorate([
-        core_1.Component({
-            selector: 'home',
-            template: "\n    <div>I am the home component</div>\n    <widget-one></widget-one>\n    <widget-two></widget-two>\n    "
+    WidgetOneModule = __decorate([
+        core_1.NgModule({
+            declarations: [widget_one_component_1.WidgetOneComponent],
+            exports: [widget_one_component_1.WidgetOneComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], WidgetOneModule);
+    return WidgetOneModule;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.WidgetOneModule = WidgetOneModule;
+//# sourceMappingURL=widget-one.module.js.map
