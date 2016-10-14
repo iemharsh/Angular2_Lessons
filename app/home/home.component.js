@@ -11,12 +11,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var HomeComponent = (function () {
     function HomeComponent() {
-        this._selected = true;
+        this.selected = true;
     }
+    HomeComponent.prototype.onChange = function ($event) {
+        console.log('Event On!.!.!>!!>>!');
+        console.log($event);
+    };
+    HomeComponent.prototype.updateVotes = function ($event) {
+        console.log($event);
+    };
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'home',
-            template: "\n    <div>I am the home component</div>\n    <widget-one *ngIf=\"selected\"></widget-one>\n    <widget-two></widget-two>\n    "
+            template: "\n    <div>I am the home component</div>\n    <h2>Favourite Component</h2><favourite-component (change)=\"onChange($event)\"></favourite-component>\n    <h2>Like Component</h2><like-component [like]=\"\"></like-component>\n    <h2>Vector Component</h2><vector-component (vote)=\"updateVotes($event)\"></vector-component>\n    ",
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);

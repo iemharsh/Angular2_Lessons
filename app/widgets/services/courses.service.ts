@@ -1,3 +1,10 @@
-/**
- * Created by iemharsh on 10/10/16.
- */
+export class CoursesService {
+    courses;
+    constructor() {
+        this.courses = ['php', 'java', 'nodejs', 'bootstrap'];
+    }
+    getService() {
+        return this.courses;
+    }
+
+}

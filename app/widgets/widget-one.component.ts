@@ -2,7 +2,9 @@ import {Component} from "@angular/core";
 @Component({
     selector: 'widget-one',
     template: `
-    <div>This is Widget One</div>
+    <div>Name: <input type="text" autoGrow/>
+    </div>
+    
     `
 })
 export class WidgetOneComponent { }

@@ -15,7 +15,7 @@ var WidgetOneComponent = (function () {
     WidgetOneComponent = __decorate([
         core_1.Component({
             selector: 'widget-one',
-            template: "\n    <div>This is Widget One</div>\n    "
+            template: "\n    <div>Name: <input type=\"text\" autoGrow/>\n    </div>\n    \n    "
         }), 
         __metadata('design:paramtypes', [])
     ], WidgetOneComponent);

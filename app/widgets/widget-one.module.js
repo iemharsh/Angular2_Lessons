@@ -10,12 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var widget_one_component_1 = require("./widget-one.component");
+var auto_grow_directive_1 = require("../directives/auto-grow.directive");
 var WidgetOneModule = (function () {
     function WidgetOneModule() {
     }
     WidgetOneModule = __decorate([
         core_1.NgModule({
-            declarations: [widget_one_component_1.WidgetOneComponent],
+            declarations: [widget_one_component_1.WidgetOneComponent, auto_grow_directive_1.AutoGrowDirective],
             exports: [widget_one_component_1.WidgetOneComponent]
         }), 
         __metadata('design:paramtypes', [])

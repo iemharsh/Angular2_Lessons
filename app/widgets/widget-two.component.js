@@ -9,15 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var courses_service_1 = require("./services/courses.service");
 var WidgetTwoComponent = (function () {
-    function WidgetTwoComponent() {
+    function WidgetTwoComponent(coursesService) {
+        this.courses = coursesService.getService();
     }
     WidgetTwoComponent = __decorate([
         core_1.Component({
             selector: 'widget-two',
-            template: "\n    <div>This is Widget Two</div>\n    "
+            template: "\n        \n    <div>\n        <h2>Example For *ngFor</h2>\n        \n        Courses\n        <ul>\n            <li *ngFor=\"let course of courses\">\n                {{course}}\n            </li>\n        </ul>\n\n    </div>\n    ",
+            providers: [courses_service_1.CoursesService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [courses_service_1.CoursesService])
     ], WidgetTwoComponent);
     return WidgetTwoComponent;
 }());
