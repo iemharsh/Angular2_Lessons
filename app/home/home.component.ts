@@ -3,9 +3,11 @@ import {Component} from "@angular/core";
     selector: 'home',
     template: `
     <div>I am the home component</div>
-    <h2>Favourite Component</h2><favourite-component (change)="onChange($event)"></favourite-component>
-    <h2>Like Component</h2><like-component [like]=""></like-component>
-    <h2>Vector Component</h2><vector-component (vote)="updateVotes($event)"></vector-component>
+    <h4>Favourite Component</h4><favourite-component (change)="onChange($event)"></favourite-component>
+    <h4>Like Component</h4><like-component [like]=""></like-component>
+    <h4>Vector Component</h4><vector-component (vote)="updateVotes($event)"></vector-component>
+    <h4>Tweets Component</h4><tweet-component></tweet-component>
+    
     `,
 })
 
@@ -13,11 +15,8 @@ import {Component} from "@angular/core";
 export class HomeComponent {
     private selected = true;
     onChange($event) {
-
         console.log('Event On!.!.!>!!>>!');
         console.log($event);
-
-
     }
 
     updateVotes($event) {

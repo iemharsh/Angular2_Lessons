@@ -8,10 +8,13 @@ import {CommonModule} from "@angular/common";
 import {FavouriteComponent} from "../exercise/favourite.component";
 import {LikeComponent} from "../exercise/like.component";
 import {VectorComponent} from "../exercise/vector.component";
+import {TweetComponent} from "../exersice4/tweets.component";
+import {TweetsService} from "../exersice4/tweets.service";
 @NgModule({
-    declarations: [HomeComponent, FavouriteComponent, LikeComponent, VectorComponent],
+    declarations: [HomeComponent, FavouriteComponent, LikeComponent, VectorComponent, TweetComponent],
     imports: [CommonModule],
-    exports: [HomeComponent, CommonModule, FavouriteComponent]
+    exports: [HomeComponent, CommonModule],
+    providers: [TweetsService]
 })
 
 export  class HomeModule { }
