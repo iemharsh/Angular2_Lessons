@@ -23,7 +23,7 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'home',
-            template: "\n    <div>I am the home component</div>\n    <h4>Favourite Component</h4><favourite-component (change)=\"onChange($event)\"></favourite-component>\n    <h4>Like Component</h4><like-component [like]=\"\"></like-component>\n    <h4>Vector Component</h4><vector-component (vote)=\"updateVotes($event)\"></vector-component>\n    <h4>Tweets Component</h4><tweet-component></tweet-component>\n    \n    ",
+            template: "\n    <div>I am the home component</div>\n    <h4>Favourite Component</h4><favourite-component (change)=\"onChange($event)\"></favourite-component>\n    <h4>Like Component</h4><like-component [like]=\"\"></like-component>\n    <h4>Vector Component</h4><vector-component (vote)=\"updateVotes($event)\"></vector-component>\n    <h4>Tweets Component</h4><tweet-component></tweet-component>\n    <h4>Zippy Component</h4><zippy title=\"First Zip\">This is a Zippy Component</zippy>\n    \n    ",
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);

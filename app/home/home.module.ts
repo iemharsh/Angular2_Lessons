@@ -10,8 +10,9 @@ import {LikeComponent} from "../exercise/like.component";
 import {VectorComponent} from "../exercise/vector.component";
 import {TweetComponent} from "../exersice4/tweets.component";
 import {TweetsService} from "../exersice4/tweets.service";
+import {ZippyComponent} from "../exercise5/zippy.component";
 @NgModule({
-    declarations: [HomeComponent, FavouriteComponent, LikeComponent, VectorComponent, TweetComponent],
+    declarations: [HomeComponent, FavouriteComponent, LikeComponent, VectorComponent, TweetComponent, ZippyComponent],
     imports: [CommonModule],
     exports: [HomeComponent, CommonModule],
     providers: [TweetsService]

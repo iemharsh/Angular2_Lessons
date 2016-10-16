@@ -16,12 +16,13 @@ var like_component_1 = require("../exercise/like.component");
 var vector_component_1 = require("../exercise/vector.component");
 var tweets_component_1 = require("../exersice4/tweets.component");
 var tweets_service_1 = require("../exersice4/tweets.service");
+var zippy_component_1 = require("../exercise5/zippy.component");
 var HomeModule = (function () {
     function HomeModule() {
     }
     HomeModule = __decorate([
         core_1.NgModule({
-            declarations: [home_component_1.HomeComponent, favourite_component_1.FavouriteComponent, like_component_1.LikeComponent, vector_component_1.VectorComponent, tweets_component_1.TweetComponent],
+            declarations: [home_component_1.HomeComponent, favourite_component_1.FavouriteComponent, like_component_1.LikeComponent, vector_component_1.VectorComponent, tweets_component_1.TweetComponent, zippy_component_1.ZippyComponent],
             imports: [common_1.CommonModule],
             exports: [home_component_1.HomeComponent, common_1.CommonModule],
             providers: [tweets_service_1.TweetsService]

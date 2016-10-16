@@ -7,6 +7,7 @@ import {Component} from "@angular/core";
     <h4>Like Component</h4><like-component [like]=""></like-component>
     <h4>Vector Component</h4><vector-component (vote)="updateVotes($event)"></vector-component>
     <h4>Tweets Component</h4><tweet-component></tweet-component>
+    <h4>Zippy Component</h4><zippy title="First Zip">This is a Zippy Component</zippy>
     
     `,
 })
